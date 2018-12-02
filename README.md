@@ -1,6 +1,6 @@
-# Installation
+# Basic Setup
 
-> Recommendation: Local installation
+> Local installation is recommended
 
 ```
 # webpack-cli is required for Webpack4
