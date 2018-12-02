@@ -116,3 +116,21 @@ plugins: [
     new CleanWebpackPlugin['dist']
 ]
 ```
+
+# Output Management: Adding Manifest file
+
+> manifest-webpack-plugin
+
+```
+# package.json
+yarn add manifest-webpack-plugin --dev
+```
+
+```
+# webpack.config.js
+const ManifestWebpackPlugin = require("manifest-webpack-plugin");
+
+plugins: [
+    new ManifestWebpackPlugin(path.join("dist", "manifest.json"))
+]
+```
