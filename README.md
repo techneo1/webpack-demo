@@ -142,3 +142,14 @@ plugins: [
 mode: "development",
 devtool: "inline-source-map"
 ```
+
+# Development - Automatic recompiling
+
+- webpack's watch mode
+- webpack-dev-server
+- webpack-dev-middleware
+
+**1. Automatic recompiling using watch mode**
+webpack --watch
+
+> But, manual browser refresh is required
