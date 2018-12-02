@@ -98,3 +98,21 @@ plugins: [
     })
 ]
 ```
+
+# Output Management: Cleaning up /dist folder
+
+> clean-webpack-plugin
+
+```
+# package.json
+yarn add clean-webpack-plugin --dev
+```
+
+```
+# webpack.config.js
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+plugins: [
+    new CleanWebpackPlugin['dist']
+]
+```
