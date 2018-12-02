@@ -134,3 +134,11 @@ plugins: [
     new ManifestWebpackPlugin(path.join("dist", "manifest.json"))
 ]
 ```
+
+# Development - using Source Maps
+
+```
+# webpack.config.js
+mode: "development",
+devtool: "inline-source-map"
+```
