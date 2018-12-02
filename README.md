@@ -45,7 +45,7 @@ module: {
 - Finally, style-loader injects styles into <style> of index.html
 ```
 
-# Asset management - Loading Images
+# Asset management - Loading Images/Fonts
 
 ```
 # package.json
@@ -56,6 +56,10 @@ module: {
     rules: [
         {
             test: /\.(jpg|png|svg|gif)$/,
+            loader: "file-loader"
+        },
+        {
+            test: /\.(woff|Woff2|eot|ttf|otf)$/,
             loader: "file-loader"
         }
     ]
