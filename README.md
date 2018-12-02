@@ -44,3 +44,20 @@ module: {
 - Firstly, css-loader handles all the CSS imports
 - Finally, style-loader injects styles into <style> of index.html
 ```
+
+# Asset management - Loading Images
+
+```
+# package.json
+yarn add file-loader --dev
+
+# webpack.config.js
+module: {
+    rules: [
+        {
+            test: /\.(jpg|png|svg|gif)$/,
+            loader: "file-loader"
+        }
+    ]
+}
+```
