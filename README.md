@@ -13,3 +13,10 @@ yarn add webpack webpack-cli --dev
 # without using any configuration file
 npx webpack
 ```
+
+```
+# with configuration
+npx webpack --config webpack.config.js
+or
+npx webpack     // webpack.config.js will be picked by default
+```
