@@ -153,3 +153,6 @@ devtool: "inline-source-map"
 webpack --watch
 
 > But, manual browser refresh is required
+
+**2. webpack-dev-server with livereloading**
+webpack-dev-server --open
