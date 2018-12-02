@@ -65,3 +65,36 @@ module: {
     ]
 }
 ```
+
+# Output Management
+
+```
+# Creating Multiple bundles
+entry: {
+    app: './scr/index.js',
+    print: './src/print.js'
+},
+output: {
+    filename: "[name].bundle.js"
+}
+```
+
+# Output Management: Auto update index.html with bundle references
+
+> html-webpack-plugin
+
+```
+# package.json
+yarn add html-webpack-plugin --dev
+```
+
+```
+# webpack.config.js
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+plugins: [
+    new HtmlWebpackPlugin({
+        title: 'Output Management'
+    })
+]
+```
